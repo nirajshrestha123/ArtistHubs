@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cdcee3-1986-4d3f-b539-b58d0fc975d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/post/singlepost.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/addpost.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/addpost.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/post.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/post.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/user.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/user.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/post/singlepost.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/singlepost.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
@@ -67,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581850913642</updated>
       <workItem from="1581850919790" duration="76000" />
-      <workItem from="1581853739039" duration="14486000" />
+      <workItem from="1581853739039" duration="15332000" />
     </task>
     <servers />
   </component>

@@ -3,18 +3,15 @@ extends ../../layout
 block content
 
     .container
-        .mt-4.md-3= posts.title
-            br
-            small by start Bootstrap
+        h2.mt-4.md-3= posts.title
 
         .breadcrumb
             .breadcrumb-item
-                a(href='/') Home
-            .breadcrumb-item.active Blog Home 2
+                a(href='/') Post
 
         .row
             .col-lg-8
-                img.img-fluid.rounded(src='http://placehold.it/750x300')
+                img.img-fluid.rounded(src='https://thegraphicsfairy.com/wp-content/uploads/2015/10/Halloween-Mystery-Lady-Image-GraphicsFairy.jpg')
                 .lead= posts.content
 
                 .card.my-4

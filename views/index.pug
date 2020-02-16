@@ -1,8 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  a.btn.btn-success(href="/users/login") Login
   #content.p-4.p-md-5
     h2.mb-4 Post
     .card.md-4
@@ -10,7 +9,7 @@ block content
         .row
           each post, i in posts
             .col-lg-6
-              img.img-fluid.rounded(src='http://placehold.it/750x300')
+              img.img-fluid.rounded(src='https://thegraphicsfairy.com/wp-content/uploads/2015/10/Halloween-Mystery-Lady-Image-GraphicsFairy.jpg')
             .col-lg-6
               .card-title= post.title
               .card-text= post.content

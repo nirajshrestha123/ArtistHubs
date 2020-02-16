@@ -1,5 +1,6 @@
 extends ../../layout
 
+
 block content
     .wrapper.d-flex.align-items-stretch
         nav#sidebar
@@ -11,8 +12,26 @@ block content
                     li
                         a(href='/posts/addpost') Add Post
         #content.p-4.p-md-5
-            h2.mb-4 Post
-            input(type='file', name='Upload')
+            h2.mb-4 Add Post
+            .container-fluid
+                form(method='POST', action='/posts/addpost' enctype="multipart/form-data", id='form-upload')
+                    .form-group
+                        label Title
+                        input.form-control(type='text', name='title', placeholder='Title')
+
+                    .form-group
+                        label Images
+                        input.form-control( type='file', name='file')
+
+                    .form-group
+                        label Content
+                        textarea.form-control(name='content', placeholder='Content', style='height = 20px; resize=none')
+
+                        br
+                        input.btn.btn-info(type='submit', value='Post')
+
+                        script $("#form-upload").on("submit", function (e) {e.preventDefault(); $.ajax({url: "/addPost", method:"post", data: new FormData(this), contentType: false, cache: false, processData: false, success: function(response){alert(response);}}
+
 
         script(src='/javascript/jquery.min.js')
         script(src='/javascript/bootstrap.min.js')

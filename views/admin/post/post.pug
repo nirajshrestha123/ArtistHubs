@@ -1,18 +1,27 @@
 extends ../../layout
 
 block content
-    .wrapper.d-flex.align-items-stretch
-        nav#sidebar
-            .p-4.pt-5
-                a.img.logo.rounded-circle.mb-5(href='#', style='background-image: url(images/logo.jpg);')
-                ul.list-unstyled.components.mb-5
-                    li
-                        a(href='/posts') Post
-                    li
-                        a(href='/posts/addpost') Add Post
-        #content.p-4.p-md-5
-            h2.mb-4 Post
-            input(type='file', name='Upload')
+        .wrapper.d-flex.align-items-stretch
+            nav#sidebar
+                .p-4.pt-5
+                    a.img.logo.rounded-circle.mb-5(href='#', style='background-image: url(images/logo.jpg);')
+                    ul.list-unstyled.components.mb-5
+                        li
+                            a(href='/posts') Post
+                        li
+                            a(href='/posts/addpost') Add Post
+            #content.p-4.p-md-5
+                h2.mb-4 Post
+                .card.md-4
+                    .card-body
+                        .row
+                            each post, i in posts
+                                .col-lg-6
+                                    img.img-fluid.rounded(src='https://thegraphicsfairy.com/wp-content/uploads/2015/10/Halloween-Mystery-Lady-Image-GraphicsFairy.jpg')
+                                .col-lg-6
+                                    .card-title= post.title
+                                    .card-text= post.content
+                                    a.btn.btn-primary(href="/posts/"+post._id) Read More
 
         script(src='/javascript/jquery.min.js')
         script(src='/javascript/bootstrap.min.js')

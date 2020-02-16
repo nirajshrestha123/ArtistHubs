@@ -9,7 +9,7 @@ router.get('/login', function(req, res, next) {
 
 
 router.post('/dashboard', function (req, res, next) {
-  res.render('admin/post');
+  res.redirect('/posts');
 
 });
 
@@ -31,7 +31,6 @@ router.post('/register', function (req, res, next) {
     }
   })
 });
-
 
 
 module.exports = router;

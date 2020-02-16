@@ -1,0 +1,28 @@
+extends ../../layout
+
+block content
+
+    .container
+        .mt-4.md-3= posts.title
+            br
+            small by start Bootstrap
+
+        .breadcrumb
+            .breadcrumb-item
+                a(href='/') Home
+            .breadcrumb-item.active Blog Home 2
+
+        .row
+            .col-lg-8
+                img.img-fluid.rounded(src='http://placehold.it/750x300')
+                .lead= posts.content
+
+                .card.my-4
+                    h5.card-header Leave a Comment
+                    .card-body
+                        form(method='POST' onsubmit="return doComment(this);")
+                            .form-group
+                                input.form-control(type='test', name='username')
+                                textarea.form-control(rows='3')
+                                button.btn.btn-primary(type='submit') Submit
+                            script function doComment(form){ $.ajax({url:"/do-comment", method: "POST", data:{username: form.username.value, comment: form.comment.value}}); return false}

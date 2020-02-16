@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    h1 Welcome Artists
+    .login-reg-panel
+        .login-info-box
+            h2 Have an account?
+            p Please Log in from here
+            label#label-register(for='log-reg-show') Login
+            input#log-reg-show(type='radio', name='active-log-panel', checked='checked')
+        .register-info-box
+            h2 Don't have an account?
+            p Please Register Here !
+            label#label-login(for='log-login-show') Register
+            input#log-login-show(type='radio', name='active-log-panel')
+        .white-panel
+            .login-show.form-group
+                h2 LOGIN
+                form(method='POST', action='/users/post')
+                    input.form-control(type='email', name='email' placeholder='Email')
+                    input.form-control(type='password', name='password' placeholder='Password')
+                    input.btn.btn-success(type='submit', value='Login')
+            .register-show.form-group
+                h2 REGISTER
+                form(method='POST', action='/users/register')
+                    input.form-control(type='email', name='email' placeholder='Email')
+                    input.form-control(type='password', name='password' placeholder='Password')
+                    input.form-control(type='password', name='c_password' placeholder='Confirm Password')
+                    input.btn.btn-success(type='submit', value='Register')
+
+                script(type='text/javascript', src='/javascripts/style.js')
+                link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')

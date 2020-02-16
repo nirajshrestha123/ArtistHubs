@@ -1,0 +1,20 @@
+extends ../../layout
+
+block content
+    .wrapper.d-flex.align-items-stretch
+        nav#sidebar
+            .p-4.pt-5
+                a.img.logo.rounded-circle.mb-5(href='#', style='background-image: url(images/logo.jpg);')
+                ul.list-unstyled.components.mb-5
+                    li
+                        a(href='/posts') Post
+                    li
+                        a(href='/posts/addpost') Add Post
+        #content.p-4.p-md-5
+            h2.mb-4 Post
+            input(type='file', name='Upload')
+
+        script(src='/javascript/jquery.min.js')
+        script(src='/javascript/bootstrap.min.js')
+        script(src='/javascript/main.js', type='5456d385e18333f1491c9c06-text/javascript')
+        script(src='https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js', data-cf-settings='5456d385e18333f1491c9c06-|49', defer='')

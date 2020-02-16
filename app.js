@@ -6,9 +6,9 @@ let logger = require('morgan');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-// let indexRouter = require('./routes/index');
-// let usersRouter = require('./ro~utes/users');
-// let postRouter = require('./routes/post');
+let indexRouter = require('./routes/index');
+let usersRouter = require('./routes/users');
+let postRouter = require('./routes/post');
 
 let app = express();
 mongoose.connect('mongodb://localhost/ArtistHub');

@@ -20,9 +20,6 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get('/addpost', function(req, res, next) {
-    res.render('admin/post/addpost');
-});
 
 router.get('/:id', function (req, res) {
     let id = Posts.findOne({'_id': Object(req.params.id)}, function (err, posts) {
